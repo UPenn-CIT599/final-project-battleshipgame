@@ -16,6 +16,7 @@ public class GameController {
 	 * Show the board, setup, and take turns until someone loses
 	 */
 	public GameController() {
+		model.getHuman().getBoard().askForPlayerName(view);
 		view.printBoard(model.getComputer().getBoard(), model.getHuman().getBoard());
 		setUp(view);
 		takeTurns();

@@ -8,6 +8,13 @@ package game;
 public class GameView {
 	
 	/**
+	 * Asks for HumanPlayer's Name
+	 */
+	public void askForHumanPlayerName() {
+		System.out.println("Please enter your name:");
+	}
+	
+	/**
 	 * Asks for a shot
 	 */
 	public void askForShot() {
@@ -80,7 +87,7 @@ public class GameView {
 	 */
 	public void tellMiss(PlayerType playerType) {
 		System.out.println(playerType==PlayerType.HUMAN ? 
-				"The human player missed":"The computer player missed");
+				"You missed":"The computer player missed");
 	}
 	
 	/**
@@ -89,7 +96,7 @@ public class GameView {
 	 */
 	public void tellHit(PlayerType playerType) {
 		System.out.println(playerType==PlayerType.HUMAN ? 
-				"The human player hit":"The computer player hit");
+				"You hit":"The computer player hit");
 	}
 	
 	/**
@@ -120,6 +127,6 @@ public class GameView {
 	 */
 	public void tellPlayerLost(PlayerType playerType) {
 		System.out.println(playerType==PlayerType.HUMAN ? 
-				"The human player lost":"The computer player lost");
+				"You lost":"The computer player lost");
 	}
 }

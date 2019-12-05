@@ -1,5 +1,7 @@
 package game;
 
+import java.util.Scanner;
+
 /**
  * Has a PlayerType, Width, Height, and array of board squares
  * @author zohair
@@ -10,6 +12,8 @@ public class Board {
 	private final int WIDTH=10;
 	private final int HEIGHT=10;
 	private BoardSquare[][] squares=null;
+	private String humanPlayerName;
+	Scanner scanner = new Scanner(System.in);
 	
 	/**
 	 * Creates a board of board square with a type of player
@@ -23,6 +27,15 @@ public class Board {
     			squares[r][c]=new BoardSquare(player, null, false);
         	}
     	}
+	}
+	
+	/**
+	 * Get the player's name for personalized board
+	 * @param view
+	 */
+	public void askForPlayerName(GameView view) {
+		view.askForHumanPlayerName();
+		humanPlayerName = scanner.nextLine();
 	}
 
 	/**
@@ -207,7 +220,7 @@ public class Board {
     	if (player==PlayerType.COMPUTER) {
     		boardString+="Computer Board\n";
     	} else if (player==PlayerType.HUMAN) {
-    		boardString+="Human Board\n";
+    		boardString+= humanPlayerName + "'s Board\n";
     	}
     	for (int r=0; r<HEIGHT; r++) {
     		for (int c=0; c<WIDTH; c++) {

@@ -25,7 +25,7 @@ public abstract class Player {
     }
 
     /**
-     * Gets teh player type
+     * Gets the player type
      * @return Human or Computer
      */
     public PlayerType getType() {
