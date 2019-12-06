@@ -6,7 +6,6 @@ In this project, the Battleship Game program has been created for user to play w
 
 Battleship ia a strategy type guessing game. It is played on ruled grid board on which each player's fleet of ships are marked. The locations of the fleets are concealed from the other player. Players alternate turns calling "shots" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.
 
-
 Five types of ship are included in this game. Each class of ship has different size. The size of Carrier is 5 and the size of Battleship is 4. The size of both Cruiser and Submarine are 3 while the size of Destroyers is 2.
 
 Before play begins, user and computer secretly arranges their ships on their primary grid. Each ship occupies a number of consecutive squares on the grid, arranged either horizontally or vertically. The number of squares for each ship is determined by the type of the ship. The ships cannot overlap. After the ships have been positioned, players start on announcing square to hit. The first who hit all the ship locations win the game.
