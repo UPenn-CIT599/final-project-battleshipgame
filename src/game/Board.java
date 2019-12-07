@@ -220,15 +220,22 @@ public class Board {
     	if (player==PlayerType.COMPUTER) {
     		boardString+="Computer Board\n";
     	} else if (player==PlayerType.HUMAN) {
-    		boardString+= humanPlayerName + "'s Board\n";
+    		boardString+="Human Board\n";
     	}
+    	boardString += "  ";
+    	for (int c=0; c<WIDTH; c++) {
+    		boardString += c + " ";
+    	}
+    	boardString += "\n";
     	for (int r=0; r<HEIGHT; r++) {
+    		boardString += r + " ";
     		for (int c=0; c<WIDTH; c++) {
     			boardString+=squares[r][c].getDisplayCharacter()+" ";
         	}
     		boardString+="\n";
     	}
     	return boardString;
+    
     }
     
 }
