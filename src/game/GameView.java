@@ -49,7 +49,7 @@ public class GameView {
 	 * Tells a ship can't be placed there
 	 */
 	public void tellInvalidPosition() {
-		System.out.println("That position would go out of bounds or over another ship");
+		System.out.println("That position would go out of bounds or over another ship.");
 	}
 	
 	/**
@@ -78,7 +78,7 @@ public class GameView {
 	 * Tells computer has finished placing its ships
 	 */
 	public void tellComputerFinishedSettingUp() {
-		System.out.println("Computer has finsihed setting up.");
+		System.out.println("Computer has finished setting up.");
 	}
 	
 	/**
@@ -105,7 +105,8 @@ public class GameView {
 	 */
 	public void tellShipAndLength(Ship s) {
 		System.out.println("Please place your "+s.getType().getName()
-				+". It has a lenth of "+s.getType().getLength()+".");
+				+". It has a length of "+s.getType().getLength()+"."+"\n"
+				+"Use the coordinate at the top-left corner of this ship.");
 	}
 	
 	/**
