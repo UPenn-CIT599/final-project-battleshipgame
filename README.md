@@ -28,7 +28,7 @@ java game.Battleship
 3.Start to place your Carrier(5 size), choose vertical or horizontal, as well as start point x,y coordinate based on instructions. 'w' stands for water. 's' stands for ship. 
 ![picture](Figure/Figure1.png)
 
-4.Repeat the placement for Battleship(4 sizes), Cruiser(3 size), Submarine(3 size),Destroyer(2 size)
+4.Repeat the placement for Battleship(4 sizes), Cruiser(3 size), Submarine(3 size),Destroyer(2 size).
 ![picture](Figure/Figure2.png)
 
 5.After setting up, the game start by Humman player shooting first. Human player needs to choose a location to hit by inserting x, y coordinates. The result of shooting(hit or miss) will be printed out. 'x'stands for successful shooting and 'o' stands for missing.
