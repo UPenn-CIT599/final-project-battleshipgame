@@ -23,18 +23,21 @@ java game.Battleship
 ## How To Play
 1.Type the user name
 
-2.When the game starts, 2 of 10x10 boards will be displayed.
+2.When the game starts, 2 of 10x10 boards will be displayed on screen.
 
 3.Start to place your Carrier(5 size), choose vertical or horizontal, as well as start point x,y coordinate based on instructions
+![picture](Figure/Figure1.png)
 
 4.Repeat the placement for Battleship(4 sizes), Cruiser(3 size), Submarine(3 size),Destroyer(2 size)
+![picture](Figure/Figure2.png)
 
-5.After setting up, the game start by Humman player hattacking first. Human player needs to choose a location to hit by inserting x, y coordinates. The result of attack(hit or miss) will be printed out. The Computer Board will be displayed on screen as well.
+5.After setting up, the game start by Humman player shooting first. Human player needs to choose a location to hit by inserting x, y coordinates. The result of shooting(hit or miss) will be printed out. 
+![picture](Figure/Figure3.png)
 
-6.The computer player will attack afterwards. Same as previous step, Attacking results as well as Human Board will be displayed on screen. 'w' stands for water. 's' stands for ship. 'x'stands for successful attack and 'o' stands for missing.
+6.The computer player will attack afterwards. Same as previous step, Attacking results as well as Human Board will be displayed on screen. 'w' stands for water. 's' stands for ship. 'x'stands for successful shooting and 'o' stands for missing.
 
-7.Repeat step 5 and 6 until one player hit all the ship on the broad of the other. The winnner will be announced.
-
+7.Repeat step 5 and 6 until one player hit all the ship on the broad of the other. The loser will be announced.
+![picture](Figure/Figure4.png)
 
 ## Class Description
 
