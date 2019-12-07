@@ -29,10 +29,11 @@ java game.Battleship
 
 4.Repeat the placement for Battleship(4 sizes), Cruiser(3 size), Submarine(3 size),Destroyer(2 size)
 
+5.After setting up, the game start by Humman player hattacking first. Human player needs to choose a location to hit by inserting x, y coordinates. The result of attack(hit or miss) will be printed out. The Computer Board will be displayed on screen as well.
 
+6. The computer player will attack afterwards. Same as previous step, Attacking results as well as Human Board will be displayed on screen. 'w' stands for water. 's' stands for ship. 'x'stands for successful attack and 'o' stands for missing.
 
-
-
+7. Repeat step 5 and 6 until one player hit all the ship on the broad of the other. The winnner will be announced.
 
 
 ## Class Description
