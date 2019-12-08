@@ -41,7 +41,7 @@ java game.Battleship
 
 Warnings will show up when the input coordinates are invalid. New coordinates will asked to be input.
 
-![picture](Figure/Figure5.png)
+![picture](Figure/Figure8.png)
 
 When the input coordinates replace a location which has to be shot before, warning message will show up and new input will be asked.
 
