@@ -39,11 +39,19 @@ java game.Battleship
 
 ![picture](Figure/Figure4.png)
 
+Warnings will show up when the input coordinates are invalid. New coordinates will asked to be input.
+
+![picture](Figure/Figure5.png)
+
+When the input coordinates replace a location which has to be shot before, warning message will show up and new input will be asked.
+
+![picture](Figure/Figure6.png)
+
 6.The computer player will attack afterwards. Same as previous step, Attacking results will be displayed on screen. 
 
 7.Repeat step 5 and 6 until one player hit all the ship on the broad of the other. The loser will be announced.
 
-![picture](Figure/Figure5.png)
+![picture](Figure/Figure7.png)
 
 ## Class Description
 
