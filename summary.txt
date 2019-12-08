@@ -12,3 +12,11 @@ Before play begins, user and computer secretly arranges their ships on their pri
 
 
 Resource: https://en.wikipedia.org/wiki/Battleship_(game)
+
+Work Split:
+Zohair Siraj:
+Initialized the game design. Completed most part of the code and all the Junit tests.
+Jiaxu Zhou:
+Improved the display and operation by adding functions. Prepared README and summary file.
+Yu Wang:
+Improved the display by adding function. Prepared a video presentation. 
