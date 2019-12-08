@@ -45,7 +45,20 @@ public class GameController {
 	 * @param v the view that tells the result
 	 */
 	public void takeTurn(Player p, Player opponent, GameView v){
-		if(p.takeShot(v, opponent.getBoard(), p.getCoordinates(v))) {
+		boolean notShotAlready = false;
+		Coordinates tmpCoordinate = null;
+		do {
+			tmpCoordinate = p.getCoordinates(v);
+			if (p.hasShotAlready(v, opponent.getBoard(), tmpCoordinate) == false) {
+				notShotAlready = true;
+			}
+			else {
+				if (p.getType() == PlayerType.HUMAN) {
+					v.tellIsHitAlready();
+				}
+			}
+		} while (!notShotAlready);
+		if(p.takeShot(v, opponent.getBoard(), tmpCoordinate)) {
 			if (opponent.checkIfLost()) {
 				v.printBoard(model.getComputer().getBoard(), model.getHuman().getBoard());
 				v.tellPlayerLost(opponent.getType());

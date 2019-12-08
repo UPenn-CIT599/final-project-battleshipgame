@@ -97,8 +97,20 @@ public abstract class Player {
      * @param view the view
      * @param opponentBoard the opponent's Board
      * @param c the coordinates
-     * @return true if it was a hi9t and false if it wasn't
+     * @return true if it was a hit and false if it wasn't
      */
+    
+    public boolean hasShotAlready(GameView view, Board opponentBoard, Coordinates c) {
+    	BoardSquare boardSquare = (opponentBoard.getBoardSquare(c.getY(), c.getX()));
+    	//System.out.println("this one "+boardSquare.getDisplayCharacter()+"\n");
+    	if ((boardSquare.getDisplayCharacter() == 'X') || (boardSquare.getDisplayCharacter() == 'O')) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    
     public boolean takeShot(GameView view, Board opponentBoard, Coordinates c){
     	if(opponentBoard.takeHit(c)) {
 			view.tellHit(type);

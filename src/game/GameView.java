@@ -100,6 +100,13 @@ public class GameView {
 	}
 	
 	/**
+	 * Tells the coordinate is hit already
+	 */
+	public void tellIsHitAlready() {
+		System.out.println("This coordinate has already been shot. Please enter new coordinates.");
+	}
+	
+	/**
 	 * Tells to place ship and tells its length
 	 * @param s the sip to place
 	 */

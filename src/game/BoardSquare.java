@@ -6,7 +6,7 @@ package game;
  * @author zohair
  *
  */
-public class BoardSquare {
+public class BoardSquare    {
 	private PlayerType playerType=null;
 	private Ship ship=null;
 	private boolean shotOrNot=false;

@@ -204,10 +204,8 @@ public class Board {
     		if (!square.isShotOrNot()) {
     			s.incrementNumHit();
     			square.setShotOrNot(true);
-    			return true;
-    		} else {
-    			return false;
-    		}
+    		} 
+    		return true;
     	}
     }
     
